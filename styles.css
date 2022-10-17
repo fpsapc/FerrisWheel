@@ -12,7 +12,23 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
-  
+  img {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 183px;
+    margin-top:135px;
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    object-fit: cover;
+    
+  }
   .line {
     background-color: black;
     width: 50%;
@@ -47,6 +63,7 @@
     border: 2px solid;
     transform-origin: 50% 0%;
     animation: cabins 10s ease-in-out infinite;
+    border-radius: 50%;
   }
   
   .cabin:nth-of-type(1) {
@@ -73,7 +90,7 @@
     right: 17%;
     top: 7%;
   }
-  
+    
   @keyframes wheel {
      0% {
        transform: rotate(0deg);
